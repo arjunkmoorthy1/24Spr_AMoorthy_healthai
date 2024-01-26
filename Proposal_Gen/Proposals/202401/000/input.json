@@ -1,0 +1,18 @@
+{
+  "Version": "000",
+  "Year": "2024",
+  "Semester": "Spring",
+  "project_name": "Mapping and Analyzing Biopsy Lesions for Prostate Cancer",
+  "Objective": " \n            The goal of this project is to develop a methodology to predict if a particular biopsied lesion of the prostate is \n            benign or malignant. This will allow doctors and other clinicians to better understand how to interpret specific, \n            suspicious Regions of Interest (ROIs) in a medical scan. It can also help doctors conduct biopsies in the future as \n            if certain localizations of prostate lesions lead to higher chances of malignant tumors.\n            ",
+  "Dataset": "\n            This dataset is publicly available. \n\n            The dataset being used is part of a publicly available TCIA (The Cancer Imaging Archive) which contains thousands of \n            patients and their corresponding medical imaging data. This prostate cancer dataset contains 1151 patients with Prostate \n            MRI and Ultrasound with Pathology and Coordinates of Tracked Biopsies. For each of these patients, a set of anywhere \n            from 30-60 images are provided as each patient has a slice of many MRI/Ultrasound images, in which the tracked biopsy \n            is contained within one of them. Ground truth cancer values, as well as cancer severity values are given in a target \n            dataset. \n\n            We want to extrapolate the Region of Interest of the individual patient images using the biopsy coordinates and feed a \n            segmented image into various different image classifications models to identify which produces the most optimal prediction \n            accuracies on a split training and testing dataset.  \n            ",
+  "Rationale": "\n            This project is going to help doctors make more informed decisions about how to biopsy and diagnose prostate cancer.\n            ",
+  "Approach": "\n            I plan on approaching this capstone through several steps.  \n\n            1. Loading Image Data and Separating Images for Individual Patients\n            2. Mapping Biopsy Coordinates onto the Corresponding Patient Images \n            3. Create Classification Deep Learning Model to Predict Biopsy Diagnosis\n            4. Evaluate and Improve Model \n            ",
+  "Timeline": "\n            This a rough time line for this project:  \n\n            - (2 Weeks) Data Loading.  \n            - (2 Weeks) Image Segmentation Using Biopsy Coordinates\n            - (5 Weeks) Classification Model Creation  \n            - (2 Weeks) Evaluate and Improve Model Training\n            - (1 Weeks) Compiling Results  \n            - (1 Weeks) Writing Up a paper and submission\n            - (1 Weeks) Final Presentation  \n            ",
+  "Expected Number Students": "\n            For this project, the expected number of students on this project is one.  \n            ",
+  "Possible Issues": "\n            The challenge will be on the segmentation and data analysis part to ensure proper mapping, and if not, to still \n            maintain that the model will predict well on the patient images.\n            ",
+  "Proposed by": "Arjun Moorthy",
+  "Proposed by email": "arjunkmoorthy@gwu.edu",
+  "instructor": "Edwin Lo",
+  "instructor_email": "edwinlo@gwu.edu",
+  "github_repo": "https://github.com/arjunkmoorthy1/24Spr_AMoorthy_healthai.git "
+}
