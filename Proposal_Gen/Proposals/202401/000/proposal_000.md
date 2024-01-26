@@ -12,8 +12,10 @@
  
             The goal of this project is to develop a methodology to predict if a particular biopsied lesion of the prostate is 
             benign or malignant. This will allow doctors and other clinicians to better understand how to interpret specific, 
-            suspicious Regions of Interest (ROIs) in a medical scan. It can also help doctors conduct biopsies in the future as 
-            if certain localizations of prostate lesions lead to higher chances of malignant tumors.
+            suspicious Regions of Interest (ROIs) in a medical scan. It can also help doctors conduct biopsies in the future as if 
+            certain localizations of prostate lesions lead to higher chances of malignant tumors. Identifying areas with higher 
+            chances of malignancy could optimize biopsy procedures and remove discomfort for patients, as unnecessary biopsies 
+            could be avoided. Accurately identifying malignant lesions can lead to earlier treatment and better patient outcomes.
             
 
 ![Figure 1: Example figure](202401_000.png)
@@ -25,14 +27,15 @@
 
             The dataset being used is part of a publicly available TCIA (The Cancer Imaging Archive) which contains thousands of 
             patients and their corresponding medical imaging data. This prostate cancer dataset contains 1151 patients with Prostate 
-            MRI and Ultrasound with Pathology and Coordinates of Tracked Biopsies. For each of these patients, a set of anywhere 
-            from 30-60 images are provided as each patient has a slice of many MRI/Ultrasound images, in which the tracked biopsy 
-            is contained within one of them. Ground truth cancer values, as well as cancer severity values are given in a target 
-            dataset. 
+            MRI and Ultrasound with Pathology and Coordinates of Tracked Biopsies. For each of these patients, a set of anywhere from 
+            30-60 images are provided as each patient has a slice of many MRI/Ultrasound images, in which the tracked biopsy is 
+            contained within one of them. Ground truth cancer values, as well as cancer severity values are given in a target dataset. 
 
-            We want to extrapolate the Region of Interest of the individual patient images using the biopsy coordinates and feed a 
-            segmented image into various different image classifications models to identify which produces the most optimal prediction 
-            accuracies on a split training and testing dataset.  
+            We want to extrapolate the Region of Interest of the individual patient images using the biopsy coordinates and segment 
+            the necessary images that contain regions where biopsies occurred. From there, I would like to feed those segmented images 
+            into various different image classifications models to identify which produces the most optimal prediction accuracies on a 
+            split training and testing dataset. Such focus on the relevant regions of the image will allow the model to concentrate on 
+            the ROIs and therefore perform better. 
             
 
 ## 3 Rationale:  
