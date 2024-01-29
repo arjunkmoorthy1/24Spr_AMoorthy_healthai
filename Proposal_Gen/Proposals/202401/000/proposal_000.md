@@ -18,8 +18,7 @@
             could be avoided. Accurately identifying malignant lesions can lead to earlier treatment and better patient outcomes.
             
 
-![Figure 1: Example figure](202401_000.png)
-*Figure 1: Caption*
+
 
 ## 2 Dataset:  
 

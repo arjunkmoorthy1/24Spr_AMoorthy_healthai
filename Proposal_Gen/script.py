@@ -48,8 +48,7 @@ f"""
 ## 1 Objective:  
 {data['Objective']}
 
-![Figure 1: Example figure]({Year}{semester2code[Semester.lower()]}_{data['Version']}.png)
-*Figure 1: Caption*
+
 
 ## 2 Dataset:  
 {data['Dataset']}
