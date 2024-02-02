@@ -33,8 +33,13 @@
             We want to extrapolate the Region of Interest of the individual patient images using the biopsy coordinates and segment 
             the necessary images that contain regions where biopsies occurred. From there, I would like to feed those segmented images 
             into various different image classifications models to identify which produces the most optimal prediction accuracies on a 
-            split training and testing dataset. Such focus on the relevant regions of the image will allow the model to concentrate on 
-            the ROIs and therefore perform better. 
+            split training/testing/validation dataset. Furthermore, with the limited amounts of imaging, I hope to use techniques such 
+            as k-fold cross validation to maximize the performance of the model, but limit overfitting problems. Focus on the relevant 
+            regions of the image will allow the model to concentrate on the ROIs and therefore perform better. 
+
+            In addition, such segmentation can also occur through the overlay of biospy files that are provided along with the dataset. 
+            I will be working with 3D Slicer and in python to either automate the region of interest using the biopsy tracked coordinates,
+            or through the biospy overlay files with 3D Slicer + Python code. 
             
 
 ## 3 Rationale:  
@@ -56,10 +61,10 @@
 
             This a rough time line for this project:  
 
-            - (2 Weeks) Data Loading.  
-            - (2 Weeks) Image Segmentation Using Biopsy Coordinates
-            - (5 Weeks) Classification Model Creation  
-            - (2 Weeks) Evaluate and Improve Model Training
+            - (1 Week) Data Loading
+            - (3 Weeks) Image Segmentation Automation Using Biopsy Coordinates and/or Biopsy Overlay Files
+            - (3 Weeks) Classification Model Creation  
+            - (3 Weeks) Evaluate and Improve Model Training using Train/Test/Validation Split
             - (1 Weeks) Compiling Results  
             - (1 Weeks) Writing Up a paper and submission
             - (1 Weeks) Final Presentation  
@@ -73,7 +78,9 @@
 ## 7 Possible Issues:  
 
             The challenge will be on the segmentation and data analysis part to ensure proper mapping, and if not, to still 
-            maintain that the model will predict well on the patient images.
+            maintain that the model will predict well on the patient images. Furthermore, figuring out how to automate the segmentation
+            of the images using either the biopsy coordinates or the biopsy overlay files via 3D slicer, and understanding how to subsequently
+            load those segmented files into Python is something I have never done and will take some time.
             
 
 
