@@ -61,8 +61,8 @@
 
             This a rough time line for this project:  
 
-            - (1 Week) Data Loading
-            - (3 Weeks) Image Segmentation Automation Using Biopsy Coordinates and/or Biopsy Overlay Files
+            - (2 Week) Data Loading
+            - (2 Weeks) Image Segmentation Automation Using Biopsy Coordinates and/or Biopsy Overlay Files
             - (3 Weeks) Classification Model Creation  
             - (3 Weeks) Evaluate and Improve Model Training using Train/Test/Validation Split
             - (1 Weeks) Compiling Results  
