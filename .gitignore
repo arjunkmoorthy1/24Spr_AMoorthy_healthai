@@ -8,7 +8,7 @@ Icon?
 # htmls/
 bigdata/
 private/
-
+data/*
 # for VS code configs
 *.code-workspace
 .vscode/*
@@ -217,4 +217,3 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-/data
